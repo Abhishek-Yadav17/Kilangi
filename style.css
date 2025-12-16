@@ -123,8 +123,7 @@ main {
 }
 
 .page1-left {
-    background-color: green;
-    background-image: url("/page1.png");
+    background-image: url("./page1.png");
     display: flex;
     align-items: flex-end;
     padding: 50px;
@@ -174,8 +173,7 @@ main {
 }
 
 .page1-right {
-    background-color: pink;
-    background-image: url("/page1a.png");
+    background-image: url("./page1a.png");
 }
 
 .page2 {
@@ -383,7 +381,7 @@ main {
 .page4-left {
     height: 100%;
     width: 40%;
-    background-image: url("/page4.jpg");
+    background-image: url("./page4.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -443,11 +441,11 @@ main {
 }
 
 .page5-left {
-    background-image: url("/page5.png");
+    background-image: url("./page5.png");
 }
 
 .page5-right {
-    background-image: url("/page5a.png");
+    background-image: url("./page5a.png");
 }
 
 .page5-box {
