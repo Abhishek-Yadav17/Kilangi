@@ -1,4 +1,14 @@
+const isMobile = window.innerWidth < 768;
+
+if (isMobile) {
+  gsap.set(
+    ".page2 *, .page3 *, .page4 *, .page5 *, .page6 *, .page7 *, .page8 *, .page9 *, .page10 *, .footer *",
+    { opacity: 1, clearProps: "all" }
+  );
+}
+
 function loco() {
+  if (isMobile) return;
   gsap.registerPlugin(ScrollTrigger);
 
   // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -66,7 +76,7 @@ function animatePage2() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page2",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -114,7 +124,7 @@ function animatePage3() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page3",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -139,7 +149,7 @@ function animatePage4() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page4",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -171,7 +181,7 @@ function animatePage5() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page5",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -196,7 +206,7 @@ function animatePage6() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page6",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -220,7 +230,7 @@ function animatePage7() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page7",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -252,7 +262,7 @@ function animatePage8() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page8",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -277,7 +287,7 @@ function animatePage9() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page9",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -303,7 +313,7 @@ function animatePage10() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page10",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 70%",
     },
   });
@@ -335,7 +345,7 @@ function animateFooter() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".footer",
-      scroller: "main",
+      scroller: isMobile ? window : "main",
       start: "top 80%",
     },
   });
