@@ -76,7 +76,7 @@ function animatePage2() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page2",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -124,7 +124,7 @@ function animatePage3() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page3",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -149,7 +149,7 @@ function animatePage4() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page4",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -181,7 +181,7 @@ function animatePage5() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page5",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -206,7 +206,7 @@ function animatePage6() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page6",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -230,7 +230,7 @@ function animatePage7() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page7",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -262,7 +262,7 @@ function animatePage8() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page8",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -287,7 +287,7 @@ function animatePage9() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page9",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -313,7 +313,7 @@ function animatePage10() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".page10",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 70%",
     },
   });
@@ -345,7 +345,7 @@ function animateFooter() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".footer",
-      scroller: isMobile ? window : "main",
+      scroller: "main",
       start: "top 80%",
     },
   });
@@ -366,16 +366,17 @@ function animateFooter() {
   });
 }
 
-animateHeader();
-animatePage1();
-animatePage2();
-animatePage3();
-animatePage4();
-animatePage5();
-animatePage6();
-animatePage7();
-animatePage8();
-animatePage9();
-animatePage10();
-animateFooter();
-
+if (!isMobile) {
+  animateHeader();
+  animatePage1();
+  animatePage2();
+  animatePage3();
+  animatePage4();
+  animatePage5();
+  animatePage6();
+  animatePage7();
+  animatePage8();
+  animatePage9();
+  animatePage10();
+  animateFooter();
+}
