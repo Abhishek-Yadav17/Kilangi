@@ -166,6 +166,12 @@ main {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page1-box button:hover {
+    background-color: #214e46;
+    color: #fff;
 }
 
 .page1-box button i {
@@ -221,12 +227,18 @@ main {
     background: transparent;
     cursor: pointer;
     font-size: 15px;
+    transition: all 0.3s ease;
 }
 
 .categories button.active {
     background-color: #214e46;
     color: #fff;
     border-color: #214e46;
+}
+
+.categories button:hover {
+    background-color: #214e46;
+    color: #fff;
 }
 
 .cards {
@@ -302,6 +314,14 @@ main {
     padding: 14px 30px;
     font-size: 16px;
     cursor: pointer;
+    border: 1px solid #214e46;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: transparent;
+    color: #214e46;
+    border: 1px solid #214e46;
 }
 
 .page3 {
@@ -419,6 +439,12 @@ main {
     padding: 10px 22px;
     font-size: 14px;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.page4-card button:hover {
+    background-color: #214e46;
+    color: #fff;
 }
 
 .page5 {
@@ -475,6 +501,11 @@ main {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+}
+
+.page5-box button:hover {
+    background-color: #214e46;
+    color: #fff;
 }
 
 .page6 {
@@ -581,10 +612,18 @@ main {
     border: none;
     padding: 12px 20px;
     font-size: 14px;
+    border: 1px solid #214e46;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.page7-card button:hover {
+    background-color: transparent;
+    color: #214e46;
+    border: 1px solid #214e46;
 }
 
 .page7-main-btn {
@@ -596,7 +635,15 @@ main {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    border: 1px solid #214e46;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.page7-main-btn:hover {
+    background-color: transparent;
+    color: #214e46;
+    border: 1px solid #214e46;
 }
 
 .page8 {
@@ -661,7 +708,15 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
+    border: 1px solid #214e46;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.page8-right button:hover {
+    background-color: transparent;
+    color: #214e46;
+    border: 1px solid #214e46;
 }
 
 .page9 {
@@ -805,8 +860,16 @@ main {
     font-size: 15px;
     display: inline-flex;
     align-items: center;
+    border: 1px solid #214e46;
     gap: 10px;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.page10-btn:hover {
+    background-color: transparent;
+    color: #214e46;
+    border: 1px solid #214e46;
 }
 
 .footer {
